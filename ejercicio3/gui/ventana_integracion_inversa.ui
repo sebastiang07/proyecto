@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VentanaIntegracionInversa</class>
+ <widget class="QWidget" name="VentanaIntegracionInversa">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ejercicio 3</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayoutPrincipal">
+   <item>
+    <widget class="QLabel" name="labelTitulo">
+     <property name="styleSheet">
+      <string notr="true">font-size: 18px;
+font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>Ejercicio 3: Integracion inversa</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayoutDatos">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelPEntrada">
+       <property name="text">
+        <string>p</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEditP">
+       <property name="placeholderText">
+        <string>Ejemplo: 0.2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelDofEntrada">
+       <property name="text">
+        <string>Grados de libertad</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEditDof">
+       <property name="placeholderText">
+        <string>Ejemplo: 6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="labelToleranciaEntrada">
+       <property name="text">
+        <string>Tolerancia</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEditTolerancia">
+       <property name="text">
+        <string>0.00001</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutBotones">
+     <item>
+      <widget class="QPushButton" name="pushButtonCaso1">
+       <property name="text">
+        <string>Caso 1</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonCaso2">
+       <property name="text">
+        <string>Caso 2</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonCaso3">
+       <property name="text">
+        <string>Caso 3</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonCalcular">
+       <property name="text">
+        <string>Calcular</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayoutResultados">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelXTexto">
+       <property name="text">
+        <string>x =</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="labelX">
+       <property name="text">
+        <string>___</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelPCalculadaTexto">
+       <property name="text">
+        <string>p calculada =</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="labelPCalculada">
+       <property name="text">
+        <string>___</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="labelErrorTexto">
+       <property name="text">
+        <string>Error =</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="labelError">
+       <property name="text">
+        <string>___</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="labelIteracionesTexto">
+       <property name="text">
+        <string>Iteraciones =</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="labelIteraciones">
+       <property name="text">
+        <string>___</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidgetIteraciones">
+     <property name="columnCount">
+      <number>5</number>
+     </property>
+     <column>
+      <property name="text">
+       <string>i</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>x</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>p calc.</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>error</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>d</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

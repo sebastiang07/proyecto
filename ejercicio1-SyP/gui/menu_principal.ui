@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>603</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>603</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMENU_PRINCIPAL">
+    <property name="title">
+     <string>MENU PRINCIPAL</string>
+    </property>
+    <addaction name="actionPSP_1"/>
+    <addaction name="actionPSP_2"/>
+    <addaction name="actionPSP_3"/>
+    <addaction name="actionPSP_4"/>
+    <addaction name="separator"/>
+    <addaction name="actionSALIR"/>
+   </widget>
+   <addaction name="menuMENU_PRINCIPAL"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionPSP_1">
+   <property name="text">
+    <string>PSP 1</string>
+   </property>
+  </action>
+  <action name="actionPSP_2">
+   <property name="text">
+    <string>PSP 2</string>
+   </property>
+  </action>
+  <action name="actionPSP_3">
+   <property name="text">
+    <string>PSP 3</string>
+   </property>
+  </action>
+  <action name="actionPSP_4">
+   <property name="text">
+    <string>PSP 4</string>
+   </property>
+  </action>
+  <action name="actionSALIR">
+   <property name="text">
+    <string>SALIR</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
